@@ -197,7 +197,7 @@ def game_loop(secret_word):
       if (guess_a_letter in get_available_letters(letter_guessed)):
           letter_guessed.append(guess_a_letter)
       else:
-        print("You fool", get_guessed_word(secret_word, letter_guessed))
+        print("You fool! You tried this letter already:", get_guessed_word(secret_word, letter_guessed))
 
       if (guess_a_letter in secret_word):
         print("Correct:", get_guessed_word(secret_word, letter_guessed))
